@@ -1,0 +1,9 @@
+<h1>All dogs:</h1>
+<% @dogs.each do |dog|%>
+    <%=link_to dog.name, dog%><br>
+<%end%>
+
+<h2>Dogs by number of employees:</h2>
+<%@dogs_sorted.map do |dog|%>
+    <%="#{dog.name} has #{dog.employees.length} employee(s)"%><br>
+<%end%>

@@ -1,0 +1,7 @@
+<h1><%=@employee.first_name%> <%=@employee.last_name%></h1><br>
+<img src="<%=@employee.img_url%>" width:"150">
+<p>Alias: <%=@employee.alias%></p><br>
+<p>Title: <%=@employee.title%></p><br>
+<p>Office: <%=@employee.office%></p><br>
+<p>Dog: <%=link_to @employee.dog.name, @employee.dog%></p>
+
